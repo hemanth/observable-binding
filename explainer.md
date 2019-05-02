@@ -6,21 +6,21 @@ __Proposal:__
 let a = 40;
 let b <- a + 1;
 a = 42 // a indirectly updates the value of b
-b === 42 // true
+b === 43 // true
 ```
 
 ```js
 let a = 40;
 let b <- (a > 40 ? a + 1 : a + 2); // it can also accept an expression
 a = 42 // a indirectly updates the value of b
-b === 42 // true
+b === 43 // true
 ```
 
 ```js
 let a = 40;
 let b <- () => {a > 40 ? a + 1 : a + 2} // it can also accept a function.
 a = 42 // a indirectly updates the value of b
-b === 42 // true
+b === 43 // true
 ```
 
 __Motivations:__
